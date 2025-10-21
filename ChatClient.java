@@ -6,7 +6,7 @@ public class ChatClient {
     public static void main(String[] args) {
         
         // 1. Створюємо базове повідомлення з зайвими пробілами
-        Message myMessage = new BaseMessage("  Привіт, це моє    повідомлення!  ");
+        Message myMessage = new BaseMessage("  Йоууууу хеллоуу  ");
         System.out.println("1. Базове повідомлення:\n'" + myMessage.getContent() + "'");
         System.out.println("-------------------------------------------------");
 
@@ -35,7 +35,8 @@ public class ChatClient {
 
         // Крок 3: Додати ім'я автора
         // (Замініть "Ваше Прізвище Ваше Ім'я" на реальні)
-        processingMessage = new AuthorDecorator(processingMessage, "Петренко Петро");
+        processingMessage = new AuthorDecorator(processingMessage, "Аббасли Алі");
         System.out.println("   Крок 3: Фінальний результат (з автором):\n   '" + processingMessage.getContent() + "'");
     }
+
 }
